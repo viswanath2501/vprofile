@@ -11,7 +11,7 @@ WORKDIR /usr/local/tomcat/webapps
 COPY target/vprofile-v2.war .
 
 # Expose port 8080 for incoming traffic
-EXPOSE 80
+EXPOSE 8080
 
 # Start Tomcat using the catalina.sh script in the foreground
 CMD ["catalina.sh", "run"]
